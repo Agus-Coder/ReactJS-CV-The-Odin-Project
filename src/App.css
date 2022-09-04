@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    width: 100vw;
+    background-color: rgb(55, 95, 182);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 80vh;
+}
+
+.rightInfContainer,
+.leftInfContainer {
+    border: gray 1px solid;
+    padding: 2.5vw;
+    margin: 2vw;
+    border-radius: 5px;
+    box-shadow: -2px 1px 10px gray;
+    background-color: rgb(224, 224, 224);
+}
+
+#imagen {
+    height: 15vh;
+    width: auto;
+}
+
+
+.footer {
+    width: 100vw;
+    background-color: rgb(55, 95, 182);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.todosLosInputs {
+    width: 100%;
+    height: 3vh;
+    margin: 0.5vh;
+    border: 1px gray solid;
+    border-radius: 4px;
+    font-size: 1em;
+    padding-left: 0.7vw;
+}
+
+
+
+
+.leftInfContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Picture Info Info Info"
+        "Experience Experience Experience Experience"
+        "Studies Studies Studies Studies"
+        "Skills Skills Courses Courses";
+}
+
+.Picture {
+    display: flex;
+    grid-area: Picture;
+    justify-content: center;
+    align-items: center;
+    border-bottom: black solid 1px;
+}
+
+.Info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nombreYApellido nombreYApellido edad"
+        "tituloYProfesion tituloYProfesion contacto";
+    grid-area: Info;
+    border-bottom: 1px solid black;
+}
+
+.nombreYApellido {
+    grid-area: nombreYApellido;
+}
+
+.tituloYProfesion {
+    grid-area: tituloYProfesion;
+}
+
+.edad {
+    grid-area: edad;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+.Skills {
+    grid-area: Skills;
+}
+
+.Courses {
+    grid-area: Courses;
+}
+
+.Experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "experiencia1 experiencia1 experiencia1"
+        "experiencia2 experiencia2 experiencia2"
+        "experiencia3 experiencia3 experiencia3";
+    grid-area: Experience;
+}
+
+.experiencia1 {
+    grid-area: experiencia1;
+}
+
+.experiencia2 {
+    grid-area: experiencia2;
+}
+
+.experiencia3 {
+    grid-area: experiencia3;
+}
+
+.Studies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "estudios1 estudios1 estudios1"
+        "estudios2 estudios2 estudios2"
+        "estudios3 estudios3 estudios3";
+    grid-area: Studies;
+}
+
+.estudios1 {
+    grid-area: estudios1;
+}
+
+.estudios2 {
+    grid-area: estudios2;
+}
+
+.estudios3 {
+    grid-area: estudios3;
+}
